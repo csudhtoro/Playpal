@@ -42,7 +42,7 @@ export default function Home() {
         <Image
           className="object-cover object-center max-w-[50rem] w-3/4 p-4 sm:p-6 mb-10  rounded-xl ring-8 ring-slate-600/10 shadow-lg shadow-slate-400"
           alt="Placeholder Image"
-          src="/images/screen1.png"
+          src="/screen1.png"
           width={400}
           height={400}
           unoptimized={true}
@@ -105,7 +105,7 @@ export default function Home() {
         <Image
           className="object-cover object-center max-w-[23rem] max-h-fit w-3/4 p-4 sm:p-6 mb-10 rounded-xl ring-8 ring-slate-600/10 shadow-lg shadow-slate-400"
           alt="Placeholder Image"
-          src="/images/screen2.png"
+          src="/screen2.png"
           width={400}
           height={400}
           unoptimized={true}
