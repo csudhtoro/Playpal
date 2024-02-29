@@ -2,6 +2,7 @@ import firebase_app from "@/shared/FirebaseConfig";
 import {
   createUserWithEmailAndPassword,
   getAuth,
+  sendEmailVerification,
   updateProfile
 } from "firebase/auth";
 
@@ -17,14 +18,14 @@ export default async function signUp(email, password, displayName, photoURL) {
     error = null;
   try {
     result = await createUserWithEmailAndPassword(auth, email, password);
-    console.log("This is the result:", result);
+
+    await sendEmailVerification(result.user);
   } catch (e) {
     console.error("Error creating user:", e.message);
   }
 
   try {
     // Update user profile with displayName and photoURL
-    console.log("About to call update profile method");
     updateProfile(result.user, {
       displayName: displayName,
       photoURL: photoURL
@@ -35,6 +36,5 @@ export default async function signUp(email, password, displayName, photoURL) {
     console.error("Error updating profile:", e.message);
     error = e;
   }
-
   return { result, error };
 }

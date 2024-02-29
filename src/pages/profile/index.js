@@ -78,7 +78,7 @@ function Profile() {
               Profile{" "}
               <span className="text-gray-900 text-[0.8rem] font-semibold"></span>
             </h2>
-            <p className="text-[1rem] font-semibold text-slate-500 px-6 text-center lg:text-start">
+            <p className="text-[1rem] font-medium text-gray-900 px-6 text-center lg:text-start">
               Manage your posts
             </p>
             <div className="text-center lg:text-center text-[2rem] font-bold text-[#0356fc] border-b-slate-100 border-b-2 px-6 mt-12 py-2">

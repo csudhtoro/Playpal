@@ -59,7 +59,7 @@ function PostItem({ post }) {
                     query: { ...post, tags: serializedTags }
                   })
                 }
-                className="text-white bg-[#0356fc] hover:bg-[#0339a3] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-xs font-semibold w-full lg:w-auto px-5 py-2.5 text-center "
+                className="text-white font-medium bg-[#0356fc] hover:bg-[#0244c9] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-xs w-full lg:w-auto px-5 py-2.5 text-center"
               >
                 Explore
               </button>

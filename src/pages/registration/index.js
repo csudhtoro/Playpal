@@ -18,7 +18,6 @@ function Registration() {
   const [submit, setSubmit] = useState(false);
 
   const storage = getStorage(app);
-  //const router = useRouter();
 
   useEffect(() => {
     if (submit == true) {
@@ -30,19 +29,14 @@ function Registration() {
     e.preventDefault();
 
     const storageRef = ref(storage, "playPal/" + imgFile?.name);
-    //console.log(imgFile);
-    //save image selected to Firebase storage
     uploadBytes(storageRef, imgFile)
-      .then((snapshot) => {
-        //console.log("Uploaded a file!");
-      })
+      .then((snapshot) => {})
       .then((resp) => {
         getDownloadURL(storageRef).then(async (url) => {
           setInputs((values) => ({ ...values, image: url }));
           setSubmit(true);
         });
       });
-    //console.log("Inputs:", inputs);
   };
 
   const handleChange = (e) => {
@@ -62,7 +56,6 @@ function Registration() {
     if (error) {
       return console.log(error);
     }
-    //console.log("Result:", result);
   };
 
   return (

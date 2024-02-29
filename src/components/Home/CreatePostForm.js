@@ -228,7 +228,7 @@ function CreatePostForm() {
               <div className="mt-3 mb-5 w-80 max-w-lg flex justify-center lg:justify-start">
                 <button
                   type="submit"
-                  className="text-white bg-[#0356fc] hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full lg:w-auto px-5 py-2.5 text-center"
+                  className="text-white bg-[#0356fc] hover:bg-[#0244c9] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full lg:w-auto px-5 py-2.5 text-center"
                 >
                   Submit
                 </button>

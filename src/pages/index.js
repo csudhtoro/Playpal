@@ -27,10 +27,10 @@ export default function Home() {
         </h1>
         <p className="text-center mt-8 mx-auto max-w-prose sm:text-lg text-slate-600 font-medium">
           Whether it&apos;s hiking, a night swim, or competitive game of
-          basketball, meet your perfect activity partners with playPal.
+          basketball, meet your perfect activity partners with PlayPal.
         </p>
         <Link
-          className="flex justify-center items-center gap-2 bg-[#0356fc] mt-16 px-4 py-5 sm:px-6 sm:py-6 text-[.9rem] text-white font-bold rounded-2xl h-9 sm:h-10 hover:bg-[#0339a3]"
+          className="flex justify-center items-center gap-2 bg-[#0356fc] mt-16 px-4 py-5 sm:px-6 sm:py-6 text-[.9rem] text-white font-medium rounded-2xl h-9 sm:h-10 hover:bg-[#0339a3]"
           href="/registration"
         >
           Get Started

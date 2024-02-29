@@ -2,7 +2,6 @@ import React from "react";
 
 function Search({ setQuery }) {
   const handleInput = (e) => {
-    //console.log(e.target.value);
     setQuery(e.target.value);
   };
 
