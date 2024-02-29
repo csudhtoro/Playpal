@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import screen1 from "../../public/screen1.PNG";
+import screen2 from "../../public/screen2.PNG";
 
 export default function Home() {
   return (
@@ -42,7 +44,7 @@ export default function Home() {
         <Image
           className="object-cover object-center max-w-[50rem] w-3/4 p-4 sm:p-6 mb-10  rounded-xl ring-8 ring-slate-600/10 shadow-lg shadow-slate-400"
           alt="Placeholder Image"
-          src="/screen1.png"
+          src={screen1}
           width={400}
           height={400}
           unoptimized={true}
@@ -105,7 +107,7 @@ export default function Home() {
         <Image
           className="object-cover object-center max-w-[23rem] max-h-fit w-3/4 p-4 sm:p-6 mb-10 rounded-xl ring-8 ring-slate-600/10 shadow-lg shadow-slate-400"
           alt="Placeholder Image"
-          src="/screen2.png"
+          src={screen2}
           width={400}
           height={400}
           unoptimized={true}
