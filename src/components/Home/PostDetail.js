@@ -52,10 +52,10 @@ function PostDetail() {
           <div className="flex gap-1 items-center px-6">
             {" "}
             <FaMapPin fill="#0356fc" size={22} />{" "}
-            <span className="text-[.6rem] sm:text-sm md:text-lg">
+            <span className="text-[.5rem] sm:text-sm md:text-lg">
               {location}
             </span>
-            <span className="text-[.6rem] sm:text-sm md:text-lg">
+            <span className="text-[.5rem] sm:text-sm md:text-lg">
               {zipCode}
             </span>
           </div>
@@ -71,7 +71,7 @@ function PostDetail() {
                   className="w-7 sm:w-12 rounded-full"
                 />
               </span>
-              <p className="text-sm sm:text-lg">{userName}</p>
+              <p className="text-[0.5rem] sm:text-lg">{userName}</p>
             </span>{" "}
           </div>
         </div>
