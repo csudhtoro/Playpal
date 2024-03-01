@@ -60,7 +60,7 @@ function Registration() {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <section className="bg-slate-50 h-screen">
+      <section className="bg-slate-50">
         {/**Background gradient */}
         <div className="relative isolate">
           <div
