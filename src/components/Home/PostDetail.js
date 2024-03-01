@@ -26,7 +26,7 @@ function PostDetail() {
   let dateFormat = moment(date).format("MM/D/YYYY");
 
   return (
-    <div className="max-w-[1126px] h-screen mx-auto">
+    <div className="max-w-[1126px] h-fit mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ function PostDetail() {
           {title}
         </div>
 
-        <div className="px-20 mt-4 text-md md:text-[1.4rem] text-center text-gray-500">
+        <div className="px-20 mt-4 text-sm md:text-[1.4rem] text-center text-gray-500">
           {desc}
         </div>
 
