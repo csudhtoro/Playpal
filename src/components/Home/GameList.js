@@ -64,7 +64,9 @@ function GameList({ setPosts, filteredPosts }) {
                 height={45}
                 quality={100}
               />
-              <h3 className="text-sm text-center font-semibold">{item.name}</h3>
+              <h3 className="text-sm text-gray-900 text-center font-semibold">
+                {item.name}
+              </h3>
             </button>
           </motion.li>
         ))}

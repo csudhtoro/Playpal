@@ -35,7 +35,7 @@ function PostItem({ post }) {
               <FaMapPin fill="#0356fc" size={20} /> {post.location},{" "}
               {post.zipCode}
             </div>
-            <p className="font-semibold text-slate-500 line-clamp-3 text-ellipsis text-sm">
+            <p className="font-semibold text-gray-500 line-clamp-3 text-ellipsis text-sm">
               {post.desc}
             </p>
             <div className="flex flex-wrap justify-start gap-2 mt-6 mb-8">

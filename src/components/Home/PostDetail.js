@@ -48,7 +48,7 @@ function PostDetail() {
             priority
           />
         </div>
-        <div className="flex justify-between py-2">
+        <div className="text-gray-900 flex justify-between py-2">
           <div className="flex gap-1 items-center px-6">
             {" "}
             <FaMapPin fill="#0356fc" size={22} />{" "}
@@ -76,7 +76,7 @@ function PostDetail() {
           </div>
         </div>
 
-        <div className="px-6 mt-6 sm:mt-12 text-center text-[2rem] sm:text-[3rem] font-bold">
+        <div className="text-gray-900 px-6 mt-6 sm:mt-12 text-center text-[2rem] sm:text-[3rem] font-bold">
           {title}
         </div>
 
@@ -99,7 +99,7 @@ function PostDetail() {
         </div>
       </motion.div>
       <>
-        <div className="mt-8 sm:mt-14">
+        <div className="text-gray-900 mt-8 sm:mt-14">
           <MapBox location={zipCode} />
         </div>
       </>
