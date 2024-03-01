@@ -35,7 +35,7 @@ function Search({ setQuery }) {
           <input
             type="search"
             id="default-search"
-            className="block w-full p-4 ps-10 text-md rounded-2xl bg-slate-100  border-2 border-slate-300"
+            className="text-gray-900 block w-full p-4 ps-10 text-md rounded-2xl bg-slate-100  border-2 border-slate-300"
             placeholder="Search By Title..."
             required
             onInput={handleInput}
