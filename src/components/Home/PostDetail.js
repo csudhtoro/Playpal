@@ -80,7 +80,7 @@ function PostDetail() {
           {title}
         </div>
 
-        <div className="px-20 mt-4 text-lg sm:text-[1.4rem] text-center text-gray-500">
+        <div className="px-20 mt-4 text-md md:text-[1.4rem] text-center text-gray-500">
           {desc}
         </div>
 
