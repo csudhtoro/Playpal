@@ -124,7 +124,7 @@ function CreatePostForm() {
       ) : null}
       {isLoading && <Loading />}
       {!isLoading && (
-        <div className="lg:max-w-[1126px] mx-auto mt-6 mb-6 h-screen">
+        <div className="lg:max-w-[1126px] mx-auto mt-6 mb-6">
           <h2 className="px-6 text-center lg:text-start text-[2.5rem] font-extrabold text-[#0356fc]">
             CREATE NEW POST
           </h2>
