@@ -1,5 +1,10 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
+export const metadata = {
+  title: "PlayPal | Make Connections",
+  description: "A place to connect with others with active lifestyles"
+};
+
 export default function Document() {
   return (
     <Html lang="en">
