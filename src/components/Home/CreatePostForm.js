@@ -113,7 +113,7 @@ function CreatePostForm() {
   };
 
   return (
-    <div className="h-screen">
+    <div>
       {showToast ? (
         <div className="absolute top-30 right-10">
           <Toast
