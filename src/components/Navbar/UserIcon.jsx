@@ -20,7 +20,12 @@ const UserIcon = ({ userImg, signOut }) => {
         onClick={() => setOpenProfile((prev) => !prev)}
       />
       <div className="relative">
-        {openProfile && <DropdownMenu signOut={signOut} />}
+        {openProfile && (
+          <DropdownMenu
+            className="-translate-y-24 ease-in-out"
+            signOut={signOut}
+          />
+        )}
       </div>
     </div>
   );
