@@ -30,7 +30,7 @@ function PostItem({ post }) {
               {post.title}
             </h5>
 
-            <div className="text-sm flex gap-1 justify-start items-center py-2 font-semibold">
+            <div className="text-gray-900 text-sm flex gap-1 justify-start items-center py-2 font-semibold">
               {" "}
               <FaMapPin fill="#0356fc" size={20} /> {post.location},{" "}
               {post.zipCode}

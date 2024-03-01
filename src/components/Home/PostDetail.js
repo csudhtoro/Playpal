@@ -32,7 +32,7 @@ function PostDetail() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6 }}
       >
-        <div className="flex justify-end px-6 text-sm sm:text-lg text-gray-900 font-semibold">
+        <div className="flex justify-end px-6 text-xs sm:text-lg text-gray-900 font-semibold">
           <div className="flex gap-2 items-center py-4">
             <FaRegCalendarMinus fill="#0356fc" /> {dateFormat}
           </div>
