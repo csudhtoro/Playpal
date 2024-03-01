@@ -53,7 +53,7 @@ function Navbar() {
         href={user ? "/dashboard" : "/"}
         className="flex items-center gap-2 sm:gap-4"
       >
-        <span className="sm:text-2xl text-[#0356fc] hover:text-[#0244c9] font-extrabold font-sans">
+        <span className="text-xl sm:text-2xl text-[#0356fc] hover:text-[#0244c9] font-extrabold font-sans">
           PlayPal
         </span>
       </Link>

@@ -52,15 +52,15 @@ function PostDetail() {
           <div className="flex gap-1 items-center px-6">
             {" "}
             <FaMapPin fill="#0356fc" size={22} />{" "}
-            <span className="text-[.5rem] sm:text-sm md:text-lg line-clamp-1 text-ellipsis">
+            <span className="text-[0.7rem] sm:text-sm md:text-lg line-clamp-1 text-ellipsis">
               {location}
             </span>
-            <span className="text-[.5rem] sm:text-sm md:text-lg">
+            <span className="text-[0.7rem] sm:text-sm md:text-lg">
               {zipCode}
             </span>
           </div>
           <div className="px-6">
-            <span className="flex items-center justify-between gap-2 text-[.6rem] sm:text-sm md:text-lg">
+            <span className="flex items-center justify-between gap-2 text-[0.7rem] sm:text-sm md:text-lg">
               <p className="font-bold">Organizer:</p>
               <span className="font-semibold">
                 <Image
@@ -71,7 +71,7 @@ function PostDetail() {
                   className="w-7 sm:w-12 rounded-full"
                 />
               </span>
-              <p className="text-[0.5rem] sm:text-lg line-clamp-1 text-ellipsis">
+              <p className="text-[0.7rem] sm:text-lg line-clamp-1 text-ellipsis">
                 {userName}
               </p>
             </span>{" "}
@@ -92,7 +92,7 @@ function PostDetail() {
               return (
                 <div
                   key={indx}
-                  className="py-1 px-3 text-[.7rem] sm:text-[1.3rem] text-gray-900 rounded-lg font-bold border-2 border-slate-400 bg-slate-100 shadow-sm"
+                  className="py-1 px-3 text-[0.7rem] sm:text-[1.3rem] text-gray-900 rounded-lg font-bold border-2 border-slate-400 bg-slate-100 shadow-sm"
                 >
                   {tag.label}
                 </div>
