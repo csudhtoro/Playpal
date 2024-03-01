@@ -1,6 +1,7 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef, use } from "react";
 import DropdownMenu from "./DropdownMenu";
+import handler from "@/pages/api/hello";
 
 const USER_IMAGE =
   "https://cdn-icons-png.flaticon.com/128/5178/5178994.png?uid=R124143615&ga=GA1.1.1996791833.1701550540&semt=ais";
@@ -8,8 +9,23 @@ const USER_IMAGE =
 const UserIcon = ({ userImg, signOut }) => {
   const [openProfile, setOpenProfile] = useState(false);
 
+  let subMenuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!subMenuRef.current.contains(e.target)) {
+        setOpenProfile(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
+
   return (
-    <div>
+    <div ref={subMenuRef}>
       <Image
         src={userImg ? userImg : USER_IMAGE}
         alt="user_pic"
@@ -20,12 +36,7 @@ const UserIcon = ({ userImg, signOut }) => {
         onClick={() => setOpenProfile((prev) => !prev)}
       />
       <div className="relative">
-        {openProfile && (
-          <DropdownMenu
-            className="-translate-y-24 ease-in-out"
-            signOut={signOut}
-          />
-        )}
+        {openProfile && <DropdownMenu signOut={signOut} />}
       </div>
     </div>
   );
