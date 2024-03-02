@@ -8,6 +8,7 @@ import { FaUserEdit } from "react-icons/fa";
 import { useAuthContext } from "@/context/AuthUserContext";
 import Toast from "../Home/Toast";
 import UserIcon from "./UserIcon";
+import { motion } from "framer-motion";
 
 const USER_IMAGE =
   "https://cdn-icons-png.flaticon.com/128/5178/5178994.png?uid=R124143615&ga=GA1.1.1996791833.1701550540&semt=ais";
@@ -48,7 +49,12 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-gray-50 flex justify-between xl:justify-around p-6 rounded-xl mb-2 border-b border-slate-200 sticky top-0 z-10">
+    <div
+      className="bg-gray-50 flex justify-between xl:justify-around p-6 rounded-xl mb-2 border-b border-slate-200 sticky top-0 z-10"
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      delay={{ delay: 0.5 }}
+    >
       <Link
         href={user ? "/dashboard" : "/"}
         className="flex items-center gap-2 sm:gap-4"
