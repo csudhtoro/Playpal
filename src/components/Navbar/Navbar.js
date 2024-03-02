@@ -49,7 +49,7 @@ function Navbar() {
   };
 
   return (
-    <div
+    <motion.div
       className="bg-gray-50 flex justify-between xl:justify-around p-6 rounded-xl mb-2 border-b border-slate-200 sticky top-0 z-10"
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -96,7 +96,7 @@ function Navbar() {
           <UserIcon userImg={user.photoURL} signOut={handleSignOut} />
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
